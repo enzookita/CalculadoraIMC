@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import { View , TextInput , Text , TouchableOpacity, Alert, Keyboard, Pressable} from "react-native"
+import { View , TextInput , Text , TouchableOpacity, Alert, Keyboard, Pressable, Vibration} from "react-native"
 import ResultadoIMC from "./ResultadoIMC"
 import styles from "./style"
 
@@ -18,6 +18,7 @@ function imcCalculator(){
 
 function verificationImc(){
     if (imc == null){
+        Vibration.vibrate()
         Alert.alert("Valores Inválidos", "Preencha usando valores corretos");
         setErrorMessage("Campo Obrigatório*")
     }
@@ -34,7 +35,7 @@ function validationImc(){
         return
     }
     verificationImc()
-    setMessageImc("Preencha o peso e Altura")
+    setMessageImc("Preencha o Peso e Altura")
     setImc(null)
     setTextButton("Calcular")
     

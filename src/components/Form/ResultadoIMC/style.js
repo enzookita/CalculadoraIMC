@@ -16,13 +16,13 @@ const styles = StyleSheet.create({
     },
     numberImc:{
         fontSize:48,
-        color:"#004080",
+        color:"#292F33",
         fontWeight:"bold",
     },
 
     information:{
-        fontSize:18,
-        color:"#004080",
+        fontSize:22,
+        color:"#292F33",
         fontWeight:"bold",
     },
     

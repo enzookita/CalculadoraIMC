@@ -1,5 +1,5 @@
 import React, {useState} from "react"
-import { View , TextInput , Text , TouchableOpacity, Alert} from "react-native"
+import { View , TextInput , Text , TouchableOpacity, Alert, Keyboard, Pressable} from "react-native"
 import ResultadoIMC from "./ResultadoIMC"
 import styles from "./style"
 
@@ -39,7 +39,8 @@ function validationImc(){
     setMessageImc("Preencha o peso e Altura")
 }
     return(
-        <View style={styles.formContext}>
+        
+        <Pressable onPress={Keyboard.dismiss} style={styles.formContext}>
             <View style={styles.form}>
                 <Text style={styles.formLabel}>Altura</Text>
                 <Text style={styles.errorMessage}>{errorMessage}</Text>
@@ -64,8 +65,9 @@ function validationImc(){
                 ><Text style={styles.textButtonCalculator}>
                     {textButton}
                     </Text></TouchableOpacity>
+                    
             </View>
             <ResultadoIMC messageResultadoIMC={messageImc} resultadoIMC={imc}/>
-        </View>
+        </Pressable>
     )
 }

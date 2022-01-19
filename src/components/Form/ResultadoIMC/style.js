@@ -18,13 +18,14 @@ const styles = StyleSheet.create({
         fontSize:48,
         color:"#292F33",
         fontWeight:"bold",
-        marginLeft:20,
+        marginLeft:0,
     },
 
     information:{
         fontSize:22,
         color:"#292F33",
         fontWeight:"bold",
+        marginLeft:6
     },
 
     boxSharebutton:{
@@ -37,6 +38,7 @@ const styles = StyleSheet.create({
         borderRadius:50,
         paddingBottom:5,
         paddingTop:5,
+        marginLeft:3
     },
     textStyle:{
         backgroundColor:"#55ACEE",

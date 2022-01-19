@@ -18,12 +18,31 @@ const styles = StyleSheet.create({
         fontSize:48,
         color:"#292F33",
         fontWeight:"bold",
+        marginLeft:20,
     },
 
     information:{
         fontSize:22,
         color:"#292F33",
         fontWeight:"bold",
+    },
+
+    boxSharebutton:{
+        width:"100%",
+        alignItems:"center",
+        marginBottom:10,
+    },
+    shared:{
+        backgroundColor:"#55ACEE",
+        borderRadius:50,
+        paddingBottom:5,
+        paddingTop:5,
+    },
+    textStyle:{
+        backgroundColor:"#55ACEE",
+        fontWeight:"bold",
+        paddingHorizontal:40,
+        borderRadius:40
     },
     
 });
